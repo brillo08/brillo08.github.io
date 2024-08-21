@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     editAcademicButton.addEventListener('click', () => {
         // Mostrar el formulario de edición y ocultar la información actual
         academicInfo.style.display = 'none';
-        academicEdit.style.display = 'block';
+        academicEdit.style.display = 'block';                                          
 
         // Rellenar los campos de entrada con la información actual
         primaryInput.value = primarySchool.textContent.replace('Escuela Primaria: ', '');
