@@ -22,9 +22,27 @@
 
         <div class="section">
             <h2>Información Académica</h2>
-            <p>Escuela Primaria: I.E.T.I. Rafael Navia Varón</p>
-            <p>Escuela de Bachillerato: I.E.T.C. Las Américas</p>
-            <p>Pregrado: Universidad Santiago de Cali (Actualmente)</p>
+            <div id="academicInfo">
+                <p id="primarySchool">Escuela Primaria: I.E.T.I. Rafael Navia Varón</p>
+                <p id="highSchool">Escuela de Bachillerato: I.E.T.C. Las Américas</p>
+                <p id="undergrad">Pregrado: Universidad Santiago de Cali (Actualmente)</p>
+                <button id="editAcademic">Editar</button>
+            </div>
+            <div id="academicEdit" style="display: none;">
+                <form id="academicForm">
+                    <label for="primaryInput">Escuela Primaria:</label>
+                    <input type="text" id="primaryInput" required>
+                    <br>
+                    <label for="highInput">Escuela de Bachillerato:</label>
+                    <input type="text" id="highInput" required>
+                    <br>
+                    <label for="undergradInput">Pregrado:</label>
+                    <input type="text" id="undergradInput" required>
+                    <br>
+                    <button type="button" id="saveAcademic">Guardar</button>
+                    <button type="button" id="cancelAcademic">Cancelar</button>
+                </form>
+            </div>
         </div>
 
         <div class="section">
@@ -32,9 +50,21 @@
             <p>Último Lugar de Trabajo: Artdeko Joyas</p>
             <p>Teléfono de la Empresa: (123) 765-4321</p>
             <p>Tiempo Trabajado: 2 años</p>
+        </div>
 
+        <!-- Nueva sección de Skills -->
+        <div class="section">
+            <h2>Skills</h2>
+            <form id="skillsForm">
+                <input type="text" id="skillInput" placeholder="Ingresa tus conocimientos en programación" required>
+                <button type="submit">Añadir Skill</button>
+            </form>
+            <ul id="skillsList">
+                <!-- Lista de habilidades añadidas aparecerá aquí -->
+            </ul>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
