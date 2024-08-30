@@ -1,18 +1,17 @@
+/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(31, 188, 199);
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 .container {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
+    background: #fff;
     padding: 20px;
-    background: #fff; 
-    border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -24,62 +23,104 @@ body {
 
 .profile-header img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin-right: 20px;
 }
 
-.profile-header h1 {
+.profile-header div {
+    flex: 1;
+}
+
+h1 {
     margin: 0;
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 0;
 }
 
 .section {
     margin-bottom: 20px;
 }
 
-.section h2 {
-    background-color: #288893;
-    padding: 10px;
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
     border-radius: 5px;
-    margin: 0;
-    color: #fff; 
+    cursor: pointer;
 }
 
-.section p, .section ul {
-    margin: 10px 0;
+button:hover {
+    background-color: #0056b3;
 }
 
-.section ul {
-    list-style-type: disc;
-    padding-left: 20px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-#academicEdit form {
+label {
     margin-top: 10px;
 }
 
-#academicEdit input {
-    display: block;
-    margin-bottom: 10px;
+input[type="text"] {
     padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: #288893;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 10px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-button:hover {
-    background-color: #1f6d7a; 
+ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-#editAcademic {
-    margin-top: 10px;
+/* Responsivo */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
