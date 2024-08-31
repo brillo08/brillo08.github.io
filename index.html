@@ -47,16 +47,34 @@
 
         <div class="section">
             <h2>Experiencia Laboral</h2>
-            <p>Último Lugar de Trabajo: Artdeko Joyas</p>
-            <p>Teléfono de la Empresa: (123) 765-4321</p>
-            <p>Tiempo Trabajado: 2 años</p>
+            <div id="experienceInfo">
+                <p id="workPlace">Último Lugar de Trabajo: Artdeko Joyas</p>
+                <p id="companyPhone">Teléfono de la Empresa: (123) 765-4321</p>
+                <p id="workDuration">Tiempo Trabajado: 2 años</p>
+                <button id="editExperience">Editar</button>
+            </div>
+            <div id="experienceEdit" style="display: none;">
+                <form id="experienceForm">
+                    <label for="workPlaceInput">Último Lugar de Trabajo:</label>
+                    <input type="text" id="workPlaceInput" required>
+                    <br>
+                    <label for="companyPhoneInput">Teléfono de la Empresa:</label>
+                    <input type="text" id="companyPhoneInput" required>
+                    <br>
+                    <label for="workDurationInput">Tiempo Trabajado:</label>
+                    <input type="text" id="workDurationInput" required>
+                    <br>
+                    <button type="button" id="saveExperience">Guardar</button>
+                    <button type="button" id="cancelExperience">Cancelar</button>
+                </form>
+            </div>
         </div>
 
-        <!-- Nueva sección de Skills -->
+        <!-- Sección de Skills -->
         <div class="section">
             <h2>Skills</h2>
             <form id="skillsForm">
-                <input type="text" id="skillInput" placeholder="Ingresa tus conocimientos en programación" required>
+                <input type="text" id="skillInput" placeholder="Ingresa tus habilidades" required>
                 <button type="submit">Añadir Skill</button>
             </form>
             <ul id="skillsList">
@@ -68,4 +86,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
